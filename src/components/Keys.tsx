@@ -281,6 +281,9 @@ export default function Keys() {
        if (e.key === "Tab") {
     e.preventDefault();
   }
+     if (e.key === "Caps") {
+    e.preventDefault();
+  }
 
       const displayKey = toDisplayKey(e);
       if (!displayKey) return;
