@@ -278,6 +278,10 @@ export default function Keys() {
 
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.repeat) return;
+       if (e.key === "Tab") {
+    e.preventDefault();
+  }
+
       const displayKey = toDisplayKey(e);
       if (!displayKey) return;
       triggerKeyFeedback(displayKey);
